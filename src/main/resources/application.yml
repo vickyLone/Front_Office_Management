@@ -1,0 +1,46 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: lincy
+    url: jdbc:mysql://localhost:3306/Springboot
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    password: xznthgpfgdaeswss
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    protocol: smtp
+    username: lonevicky@gmail.com
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+      
+      
+app: 
+ messages:
+    signUpSuccessMsg: Please Check Your Email
+    signUpErrorMsg: Something went wrong
+    loginInvalidCredentialsMsg: Invalid Credentials  
+    loginAccntLockedMsg: Your Account Is Locked  
+    unlockSccMsg: Account is unlocked, please login with new Password
+    unlockErrMsg: Please Confirm Password Again
+    forgotPzdSuccMsg: Password is sent to your email
+    forgotPzdErrMsg: Email address not found, please enter valid email
+    addEnquirySuccMsg: Enquiry Added
+    addEnquiryErrMsg: Something went wrong
+
+
+     
+ 
+      
